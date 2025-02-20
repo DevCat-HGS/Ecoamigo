@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoAmigo</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-eco-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <i class="fas fa-leaf text-success me-2"></i>
+                <span class="fw-bold">EcoAmigo</span>
+            </a>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav class="col-md-3 col-lg-2 d-md-block bg-eco sidebar">
+                <div class="position-sticky pt-5">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <button class="nav-link active" onclick="mostrarSeccion('inicio')">
+                                <i class="fas fa-home"></i> Inicio
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" onclick="mostrarSeccion('test')">
+                                <i class="fas fa-chart-bar"></i> Test de Sostenibilidad
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" onclick="mostrarSeccion('consejos')">
+                                <i class="fas fa-lightbulb"></i> Consejos
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" onclick="mostrarSeccion('seguimiento')">
+                                <i class="fas fa-clipboard-list"></i> Seguimiento
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" onclick="mostrarSeccion('comunidad')">
+                                <i class="fas fa-users"></i> Comunidad
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Main content -->
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 main-content">
+                <section id="inicio" class="seccion pt-5">
+                    <div class="hero-section text-center">
+                        <h1 class="display-4 fw-bold text-success">Bienvenido a EcoAmigo</h1>
+                        <p class="lead">Juntos por un futuro más sostenible</p>
+                        <div class="eco-cards mt-5">
+                            <div class="row g-4">
+                                <div class="col-md-4">
+                                    <div class="card h-100 eco-card">
+                                        <div class="card-body">
+                                            <i class="fas fa-seedling fa-3x text-success mb-3"></i>
+                                            <h5 class="card-title">Aprende</h5>
+                                            <p class="card-text">Descubre consejos y prácticas sostenibles.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card h-100 eco-card">
+                                        <div class="card-body">
+                                            <i class="fas fa-chart-line fa-3x text-success mb-3"></i>
+                                            <h5 class="card-title">Mide</h5>
+                                            <p class="card-text">Evalúa tu impacto ambiental.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card h-100 eco-card">
+                                        <div class="card-body">
+                                            <i class="fas fa-users fa-3x text-success mb-3"></i>
+                                            <h5 class="card-title">Conecta</h5>
+                                            <p class="card-text">Únete a una comunidad comprometida.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="test" class="seccion oculto">
+                    <div class="test-container">
+                        <h2 class="text-center mb-4">
+                            <i class="fas fa-leaf text-success me-2"></i>
+                            Test de Sostenibilidad
+                        </h2>
+                        <div class="test-card">
+                            <form id="testForm" class="needs-validation" novalidate>
+                                <div class="progress mb-4">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                
+                                <div class="pregunta-card mb-4">
+                                    <div class="pregunta-numero">01</div>
+                                    <label class="form-label">¿Cuánto reciclas?</label>
+                                    <div class="opciones-grid">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="reciclaje" value="1" required>
+                                            <label class="form-check-label">
+                                                <i class="fas fa-times-circle text-danger"></i> Nunca
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="reciclaje" value="2">
+                                            <label class="form-check-label">
+                                                <i class="fas fa-minus-circle text-warning"></i> A veces
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="reciclaje" value="3">
+                                            <label class="form-check-label">
+                                                <i class="fas fa-check-circle text-primary"></i> Frecuentemente
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="reciclaje" value="4">
+                                            <label class="form-check-label">
+                                                <i class="fas fa-star text-success"></i> Siempre
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="pregunta-card mb-4">
+                                    <div class="pregunta-numero">02</div>
+                                    <label class="form-label">¿Usas transporte público?</label>
+                                    <div class="opciones-grid">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="transporte" value="1" required>
+                                            <label class="form-check-label">
+                                                <i class="fas fa-times-circle text-danger"></i> Nunca
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="transporte" value="2">
+                                            <label class="form-check-label">
+                                                <i class="fas fa-minus-circle text-warning"></i> A veces
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="transporte" value="3">
+                                            <label class="form-check-label">
+                                                <i class="fas fa-check-circle text-primary"></i> Frecuentemente
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="transporte" value="4">
+                                            <label class="form-check-label">
+                                                <i class="fas fa-star text-success"></i> Siempre
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="btn btn-eco w-100">
+                                    <i class="fas fa-paper-plane me-2"></i>
+                                    Enviar Test
+                                </button>
+                            </form>
+                        </div>
+
+                        <div id="resultadoTest" class="mt-4"></div>
+
+                        <div id="historialTests" class="mt-5">
+                            <h3 class="text-center mb-4">
+                                <i class="fas fa-history text-success me-2"></i>
+                                Historial de Tests
+                            </h3>
+                            <div class="historial-grid">
+                                <!-- El contenido se llenará dinámicamente -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="consejos" class="seccion oculto">
+                    <div class="consejos-container">
+                        <h2 class="text-center mb-4">
+                            <i class="fas fa-lightbulb text-success me-2"></i>
+                            Consejos Ecológicos
+                        </h2>
+
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div id="listaConsejos" class="consejos-grid">
+                                    <!-- Los consejos se cargarán dinámicamente aquí -->
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-4">
+                                <div class="nuevo-consejo-card">
+                                    <h3 class="text-center mb-3">
+                                        <i class="fas fa-plus-circle text-success me-2"></i>
+                                        Agregar Nuevo Consejo
+                                    </h3>
+                                    <form id="consejoForm" class="consejo-form">
+                                        <div class="mb-3">
+                                            <textarea 
+                                                id="nuevoConsejo" 
+                                                class="form-control" 
+                                                rows="4" 
+                                                placeholder="Escribe un nuevo consejo ecológico..."
+                                                required></textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn-eco w-100">
+                                            <i class="fas fa-paper-plane me-2"></i>
+                                            Publicar Consejo
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="seguimiento" class="seccion oculto">
+                    <div class="seguimiento-container">
+                        <h2 class="text-center mb-4">
+                            <i class="fas fa-clipboard-list text-success me-2"></i>
+                            Seguimiento de Actividades
+                        </h2>
+
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="nuevo-seguimiento-card">
+                                    <h3 class="text-center mb-3">
+                                        <i class="fas fa-plus-circle text-success me-2"></i>
+                                        Nuevo Registro
+                                    </h3>
+                                    <form id="seguimientoForm" class="seguimiento-form">
+                                        <div class="mb-3">
+                                            <label class="form-label">Descripción de la Actividad</label>
+                                            <textarea 
+                                                id="seguimientoTexto" 
+                                                class="form-control" 
+                                                rows="4" 
+                                                placeholder="Describe tu actividad ecológica..."
+                                                required></textarea>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Categoría</label>
+                                            <select id="seguimientoCategoria" class="form-select" required>
+                                                <option value="" disabled selected>Selecciona una categoría</option>
+                                                <option value="reciclaje">♻️ Reciclaje</option>
+                                                <option value="energia">💡 Energía</option>
+                                                <option value="transporte">🚲 Transporte</option>
+                                                <option value="agua">💧 Agua</option>
+                                                <option value="otros">🌱 Otros</option>
+                                            </select>
+                                        </div>
+                                        <button type="submit" class="btn btn-eco w-100">
+                                            <i class="fas fa-save me-2"></i>
+                                            Guardar Registro
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-8">
+                                <div id="historialSeguimiento" class="seguimiento-timeline">
+                                    <h3 class="text-center mb-4">
+                                        <i class="fas fa-history text-success me-2"></i>
+                                        Historial de Actividades
+                                    </h3>
+                                    <div class="timeline-container">
+                                        <!-- El contenido se llenará dinámicamente -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="comunidad" class="seccion oculto">
+                    <div class="comunidad-container">
+                        <h2 class="text-center mb-4">
+                            <i class="fas fa-users text-success me-2"></i>
+                            Comunidad EcoAmigo
+                        </h2>
+
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="nuevo-mensaje-card">
+                                    <h3 class="text-center mb-3">
+                                        <i class="fas fa-paper-plane text-success me-2"></i>
+                                        Comparte con la Comunidad
+                                    </h3>
+                                    <form id="mensajeForm" class="mensaje-form">
+                                        <div class="mb-3">
+                                            <textarea 
+                                                id="mensajeComunidad" 
+                                                class="form-control" 
+                                                rows="4" 
+                                                placeholder="Comparte tus ideas, experiencias o preguntas..."
+                                                required></textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn-eco w-100">
+                                            <i class="fas fa-share me-2"></i>
+                                            Publicar
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-8">
+                                <div id="mensajesComunidad" class="mensajes-feed">
+                                    <!-- Los mensajes se cargarán dinámicamente aquí -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 

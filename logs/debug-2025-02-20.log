@@ -1,0 +1,30 @@
+{"timestamp":"2025-02-20T18:08:41.378Z","type":"info","message":"API Request","data":{"method":"GET","path":"/api/seguimientos","query":{}}}
+{"timestamp":"2025-02-20T18:08:43.928Z","type":"info","message":"API Request","data":{"method":"OPTIONS","path":"/api/seguimientos/67b76adda81cb829a0ea3957","query":{}}}
+{"timestamp":"2025-02-20T18:08:43.930Z","type":"info","message":"API Request","data":{"method":"DELETE","path":"/api/seguimientos/67b76adda81cb829a0ea3957","query":{}}}
+{"timestamp":"2025-02-20T18:08:43.936Z","type":"info","message":"API Request","data":{"method":"GET","path":"/api/seguimientos","query":{}}}
+{"timestamp":"2025-02-20T18:08:45.030Z","type":"info","message":"API Request","data":{"method":"GET","path":"/api/mensajes","query":{}}}
+{"timestamp":"2025-02-20T18:08:48.065Z","type":"info","message":"API Request","data":{"method":"OPTIONS","path":"/api/mensajes/67b76cb07e31316665b5bf72","query":{}}}
+{"timestamp":"2025-02-20T18:08:48.067Z","type":"info","message":"API Request","data":{"method":"DELETE","path":"/api/mensajes/67b76cb07e31316665b5bf72","query":{}}}
+{"timestamp":"2025-02-20T18:08:48.073Z","type":"info","message":"API Request","data":{"method":"GET","path":"/api/mensajes","query":{}}}
+{"timestamp":"2025-02-20T18:08:49.879Z","type":"info","message":"API Request","data":{"method":"GET","path":"/api/tests","query":{}}}
+{"timestamp":"2025-02-20T18:08:49.880Z","type":"debug","message":"Obteniendo tests","data":{}}
+{"timestamp":"2025-02-20T18:35:50.263Z","type":"info","message":"API Request","data":{"method":"GET","path":"/api/seguimientos","query":{}}}
+{"timestamp":"2025-02-20T18:35:57.384Z","type":"info","message":"API Request","data":{"method":"GET","path":"/api/tests","query":{}}}
+{"timestamp":"2025-02-20T18:35:57.385Z","type":"debug","message":"Obteniendo tests","data":{}}
+{"timestamp":"2025-02-20T18:35:57.387Z","type":"info","message":"Tests recuperados","data":{"count":1}}
+{"timestamp":"2025-02-20T18:36:15.744Z","type":"info","message":"API Request","data":{"method":"OPTIONS","path":"/api/tests","query":{}}}
+{"timestamp":"2025-02-20T18:36:15.745Z","type":"info","message":"API Request","data":{"method":"POST","path":"/api/tests","query":{}}}
+{"timestamp":"2025-02-20T18:36:15.746Z","type":"debug","message":"Creando nuevo test","data":{"reciclaje":1,"transporte":1,"puntuacionTotal":2}}
+{"timestamp":"2025-02-20T18:36:15.747Z","type":"info","message":"Test creado exitosamente","data":{"id":"67b7761fc4409ca526d0ca40"}}
+{"timestamp":"2025-02-20T18:36:15.751Z","type":"info","message":"API Request","data":{"method":"GET","path":"/api/tests","query":{}}}
+{"timestamp":"2025-02-20T18:36:15.752Z","type":"debug","message":"Obteniendo tests","data":{}}
+{"timestamp":"2025-02-20T18:36:15.754Z","type":"info","message":"Tests recuperados","data":{"count":2}}
+{"timestamp":"2025-02-20T18:36:27.560Z","type":"info","message":"API Request","data":{"method":"GET","path":"/api/tests","query":{}}}
+{"timestamp":"2025-02-20T18:36:27.561Z","type":"debug","message":"Obteniendo tests","data":{}}
+{"timestamp":"2025-02-20T18:36:27.563Z","type":"info","message":"Tests recuperados","data":{"count":2}}
+{"timestamp":"2025-02-20T18:39:25.023Z","type":"info","message":"API Request","data":{"method":"OPTIONS","path":"/api/tests","query":{}}}
+{"timestamp":"2025-02-20T18:39:25.025Z","type":"info","message":"API Request","data":{"method":"POST","path":"/api/tests","query":{}}}
+{"timestamp":"2025-02-20T18:39:25.025Z","type":"debug","message":"Creando nuevo test","data":{"reciclaje":4,"transporte":4,"puntuacionTotal":8}}
+{"timestamp":"2025-02-20T18:39:25.026Z","type":"info","message":"Test creado exitosamente","data":{"id":"67b776ddc4409ca526d0ca41"}}
+{"timestamp":"2025-02-20T18:39:25.030Z","type":"info","message":"API Request","data":{"method":"GET","path":"/api/tests","query":{}}}
+{"timestamp":"2025-02-20T18:39:25.030Z","type":"debug","message":"Obteniendo tests","data":{}}
